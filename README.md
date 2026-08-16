@@ -1,6 +1,6 @@
 # Oraganic websites
 
-Five static sites, no paid tools:
+Six static sites, no paid tools:
 
 | Domain | Folder | What it is |
 | --- | --- | --- |
@@ -9,6 +9,7 @@ Five static sites, no paid tools:
 | [dailycart24x7.com](https://dailycart24x7.com) | `dailycart24x7.com/` | Mango export from India |
 | [idailycart.com](https://idailycart.com) | `idailycart.com/` | Indian mango product catalogue |
 | [thanks2all.org](https://thanks2all.org) | `thanks2all.org/` | Personal gratitude diary |
+| [alfa-garden.com](https://alfa-garden.com) | `alfa-garden.com/` | KR Puram organic produce shop |
 
 Open any `index.html` in a browser to preview locally.
 
@@ -29,6 +30,7 @@ Open any `index.html` in a browser to preview locally.
 | dailycart24x7.com | https://github.com/mohanreddy2/dailycart24x7 | https://mohanreddy2.github.io/dailycart24x7/ |
 | idailycart.com | https://github.com/mohanreddy2/idailycart | https://mohanreddy2.github.io/idailycart/ |
 | thanks2all.org | https://github.com/mohanreddy2/thanks2all | https://mohanreddy2.github.io/thanks2all/ |
+| alfa-garden.com | https://github.com/mohanreddy2/alfa-garden | https://mohanreddy2.github.io/alfa-garden/ |
 
 ## Point your domains (required)
 
@@ -44,6 +46,8 @@ Add a **CNAME** for `www` → `mohanreddy2.github.io`
 Contact forms send to `mohan.reddy02@gmail.com` and CC `support@dailycart24x7.com` via free [FormSubmit](https://formsubmit.co). After the first test send, open Gmail and click the FormSubmit confirmation link (check Spam). WhatsApp: `+65 9062 8025` and `+91 91107 59384`.
 
 After DNS updates (often 5–30 minutes), GitHub will issue free HTTPS certificates. In each repo: Settings → Pages → check **Enforce HTTPS** when it becomes available.
+
+**alfa-garden.com today:** the domain is registered on Squarespace (old Google Domains nameservers). Live DNS still points `@` and `www` to Webador (`35.204.150.5`). Leave those A records if you keep editing in Webador. To switch this folder live, replace those A records with the GitHub Pages IPs above and add `www` → `mohanreddy2.github.io`.
 
 ## Update content without editing HTML
 

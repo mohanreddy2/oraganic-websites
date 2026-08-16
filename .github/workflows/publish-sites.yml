@@ -42,4 +42,5 @@ jobs:
           publish_one idailycart.com idailycart
           publish_one oraganic.online oraganic-online
           publish_one oraganic-ai.com oraganic-ai
+          publish_one alfa-garden.com alfa-garden
           publish_one admin oraganic-admin

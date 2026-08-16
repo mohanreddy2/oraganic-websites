@@ -97,3 +97,19 @@ collections:
           - { label: Facebook, name: facebook, widget: string }
           - { label: Instagram, name: instagram, widget: string }
           - { label: X, name: x, widget: string }
+
+  - name: alfa_garden
+    label: alfa-garden.com
+    files:
+      - name: home
+        label: Home
+        file: alfa-garden.com/content.json
+        fields:
+          - { label: Hero title, name: hero_title, widget: string }
+          - { label: Hero lead, name: hero_lead, widget: text }
+          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false }
+          - { label: Support email, name: support_email, widget: string }
+          - { label: YouTube, name: youtube, widget: string }
+          - { label: Facebook, name: facebook, widget: string }
+          - { label: Instagram, name: instagram, widget: string }
+          - { label: X, name: x, widget: string }
