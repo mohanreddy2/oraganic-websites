@@ -47,7 +47,7 @@ After DNS updates (often 5–30 minutes), GitHub will issue free HTTPS certifica
 
 ## Update content without editing HTML
 
-**Admin panel:** [thanks2all.org/admin](https://thanks2all.org/admin/) — sign in with a GitHub personal access token (Contents: Read and write on `oraganic-websites`). Edit homepage text for every site, then save. A GitHub Action publishes the live domains.
+**Admin panel (use this every day):** [https://mohanreddy2.github.io/oraganic-admin/](https://mohanreddy2.github.io/oraganic-admin/) — this address is HTTPS. Sign in with a GitHub personal access token (Contents: Read and write on `oraganic-websites`). Edit homepage text for every site, then save. A GitHub Action publishes the live domains. The old [thanks2all.org/admin](http://thanks2all.org/admin/) link sends you here.
 
 **Google Sheet (daily notes / small text):**
 

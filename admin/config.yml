@@ -2,9 +2,9 @@ backend:
   name: github
   repo: mohanreddy2/oraganic-websites
   branch: main
-site_url: https://thanks2all.org
+site_url: https://mohanreddy2.github.io/oraganic-admin
 display_url: https://thanks2all.org
-logo_url: /favicon.svg
+logo_url: ./favicon.svg
 media_folder: media
 public_folder: /media
 locale: en
