@@ -217,6 +217,16 @@ input, textarea, select {
 .footer-inner { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .contact-line { line-height: 1.7; }
 .contact-line a { text-decoration: underline; text-underline-offset: 2px; }
+.social { width: 100%; margin: 0; }
+.social a { text-decoration: underline; text-underline-offset: 2px; }
+.social-bar { display: flex; flex-wrap: wrap; gap: 10px; }
+.feed-card .feed-frame {
+  margin-top: 14px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff8f1;
+}
+.feed-card iframe { width: 100%; min-height: 520px; border: 0; display: block; }
 
 @media (max-width: 860px) {
   .menu-btn { display: block; }

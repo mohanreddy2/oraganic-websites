@@ -130,6 +130,8 @@ input, textarea, select {
 .footer-inner { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .contact-line { line-height: 1.7; }
 .contact-line a { text-decoration: underline; text-underline-offset: 2px; }
+.social { width: 100%; margin: 0; }
+.social a { text-decoration: underline; text-underline-offset: 2px; }
 
 @media (max-width: 860px) {
   .menu-btn { display: block; }
