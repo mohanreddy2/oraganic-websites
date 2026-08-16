@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Oraganic</title>
+  <meta name="description" content="Ask Oraganic about weekly boxes, delivery areas, and farm partnerships.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="logo-mark" src="favicon.svg" alt="">
+        <span class="logo-word">Oraganic</span>
+      </a>
+      <button class="menu-btn" type="button" data-menu aria-label="Open menu">☰</button>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Boxes</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section grid-2">
+      <div>
+        <p class="eyebrow">Hello</p>
+        <h1>Tell us what you need.</h1>
+        <p class="lead">Weekly boxes, a one-off pantry order, or a farm partnership — write a short note and we will reply from hello@oraganic.online.</p>
+        <div class="card" style="margin-top: 24px;">
+          <p><strong>Email</strong><br>hello@oraganic.online</p>
+          <p><strong>Hours</strong><br>Mon–Sat, 9:00–18:00 IST</p>
+        </div>
+      </div>
+      <form class="card" data-form>
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="box">What are you looking for?</label>
+        <select id="box" name="box">
+          <option>Weekly harvest box</option>
+          <option>One-time order</option>
+          <option>Farm partnership</option>
+          <option>Something else</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button class="btn btn-primary" type="submit">Send with email app</button>
+        <p class="form-note">Uses your email app — no paid form service required.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Oraganic · oraganic.online</p>
+      <p><a href="https://oraganic-ai.com">oraganic-ai.com</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

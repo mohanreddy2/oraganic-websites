@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Early access — Oraganic AI</title>
+  <meta name="description" content="Request early access to Oraganic AI for your farm or garden.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="logo-mark" src="favicon.svg" alt="">
+        <span class="wordmark">Oraganic AI</span>
+      </a>
+      <button class="menu-btn" type="button" data-menu aria-label="Open menu">☰</button>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+        <a class="active" href="contact.html">Early access</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="cta">
+      <div>
+        <p class="kicker">Waitlist</p>
+        <h1>Tell us about your plot.</h1>
+        <p>We read every note. Mention crops, acres or pots, and whether you are certified organic or just farming that way.</p>
+        <p style="color: var(--muted);">Replies go to hello@oraganic-ai.com</p>
+      </div>
+      <form data-form>
+        <label for="name">Name</label>
+        <input class="dark-field" id="name" name="name" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input class="dark-field" id="email" name="email" type="email" autocomplete="email" required>
+        <label for="farm">Farm or garden</label>
+        <input class="dark-field" id="farm" name="farm" placeholder="Village, city, or plot name" required>
+        <label for="message">What do you want help with?</label>
+        <textarea class="dark-field" id="message" name="message" rows="4" required></textarea>
+        <button class="btn btn-primary" type="submit">Send with email app</button>
+        <p class="form-note">Free contact method — opens your email app. No paid form tool.</p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Oraganic AI · oraganic-ai.com</p>
+      <p><a href="https://oraganic.online">oraganic.online</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
