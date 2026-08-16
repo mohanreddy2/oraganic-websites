@@ -16,22 +16,25 @@ Open either `index.html` in a browser to preview locally.
 - [Unsplash](https://unsplash.com) photos
 - Contact forms open the visitor’s email app (`mailto:`) — no Formspree account required
 
-## Free hosting (pick one)
+## Live repos
 
-Create a free GitHub repo, then deploy **each folder as its own site**:
+| Site | GitHub | Pages |
+| --- | --- | --- |
+| Source (both sites) | https://github.com/mohanreddy2/oraganic-websites | — |
+| oraganic.online | https://github.com/mohanreddy2/oraganic-online | https://mohanreddy2.github.io/oraganic-online/ |
+| oraganic-ai.com | https://github.com/mohanreddy2/oraganic-ai | https://mohanreddy2.github.io/oraganic-ai/ |
 
-1. **[Cloudflare Pages](https://pages.cloudflare.com)** (recommended, free custom domains)
-   - New project → connect GitHub → set root directory to `oraganic.online`
-   - Repeat for `oraganic-ai.com`
-   - In each project: Custom domains → add the matching domain
-2. **[Netlify](https://www.netlify.com)** — same idea: two sites, two publish directories
-3. **[GitHub Pages](https://pages.github.com)** — easiest if you split the folders into two repos later
+## Point your domains (required)
 
-## Point your domains
+At the registrar for each domain, add these **A** records for `@` (the root domain):
 
-At your domain registrar, add records the host shows you. Typical Cloudflare Pages setup:
+- `185.199.108.153`
+- `185.199.109.153`
+- `185.199.110.153`
+- `185.199.111.153`
 
-- `oraganic.online` → CNAME to `your-pages-project.pages.dev` (or their A records)
-- `oraganic-ai.com` → CNAME to the second Pages project
+Add a **CNAME** for `www` → `mohanreddy2.github.io`
 
 Also create mailbox or forwarding for `hello@oraganic.online` and `hello@oraganic-ai.com` if you want the contact buttons to land in a real inbox (many registrars include free forwarding).
+
+After DNS updates (often 5–30 minutes), GitHub will issue free HTTPS certificates. In each repo: Settings → Pages → check **Enforce HTTPS** when it becomes available.
