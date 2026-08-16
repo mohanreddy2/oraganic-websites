@@ -36,7 +36,7 @@ h1, h2, h3, .wordmark { font-family: "Syne", sans-serif; }
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 78px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; }
-.logo-mark { width: 34px; height: 34px; }
+.logo { height: 44px; width: auto; max-width: 190px; object-fit: contain; background: #fff; border-radius: 8px; padding: 4px; }
 .wordmark { letter-spacing: -0.03em; }
 .nav { display: flex; gap: 24px; }
 .nav a { color: var(--muted); font-weight: 700; }
@@ -145,4 +145,5 @@ input, textarea, select {
   }
   .nav.open { display: flex; }
   .hero-grid, .grid-3, .grid-2, .cta { grid-template-columns: 1fr; }
+  .logo { height: 36px; max-width: 140px; }
 }

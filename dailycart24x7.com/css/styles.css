@@ -42,7 +42,7 @@ h1, h2, h3, .logo-word { font-family: "Fraunces", serif; }
 }
 .header-inner { justify-content: space-between; min-height: 76px; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
-.logo-mark { width: 36px; height: 36px; }
+.logo { height: 48px; width: auto; max-width: 220px; object-fit: contain; }
 .logo-word { font-size: 1.28rem; letter-spacing: -0.02em; }
 .nav { gap: 26px; }
 .nav a { color: var(--muted); font-weight: 700; }
@@ -234,4 +234,5 @@ input, textarea, select {
   .nav.open { display: flex; }
   .hero, .grid-3, .grid-2, .grid-4, .banner, .gallery { grid-template-columns: 1fr; }
   .hero-card img, .gallery img { height: 260px; }
+  .logo { height: 40px; max-width: 160px; }
 }
