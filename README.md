@@ -35,6 +35,6 @@ At the registrar for each domain, add these **A** records for `@` (the root doma
 
 Add a **CNAME** for `www` → `mohanreddy2.github.io`
 
-Contact on both sites: `mohan.reddy02@gmail.com`, `support@dailycart24x7.com`, WhatsApp `+65 9062 8025` and `+91 91107 59384`.
+Contact forms send to `mohan.reddy02@gmail.com` and CC `support@dailycart24x7.com` via free [FormSubmit](https://formsubmit.co). After the first test send, open Gmail and click the FormSubmit confirmation link (check Spam). WhatsApp: `+65 9062 8025` and `+91 91107 59384`.
 
 After DNS updates (often 5–30 minutes), GitHub will issue free HTTPS certificates. In each repo: Settings → Pages → check **Enforce HTTPS** when it becomes available.

@@ -147,6 +147,7 @@ input, textarea, select {
 }
 .form-note { color: var(--muted); min-height: 1.4em; }
 .form-note.ok { color: var(--leaf); }
+.honey { position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden; }
 
 .site-footer {
   border-top: 1px solid var(--line);

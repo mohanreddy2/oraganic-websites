@@ -6,23 +6,40 @@ if (toggle && nav) {
 
 const form = document.querySelector("[data-form]");
 if (form) {
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const note = form.querySelector(".form-note");
+    const button = form.querySelector("[type=submit]");
     const data = new FormData(form);
     const name = String(data.get("name") || "").trim();
     const email = String(data.get("email") || "").trim();
-    const message = String(data.get("message") || data.get("farm") || "").trim();
+    const message = String(data.get("message") || "").trim();
     if (!name || !email || !message) {
       note.textContent = "Please fill in every field.";
       note.classList.remove("ok");
       return;
     }
-    const subject = encodeURIComponent("Oraganic AI request from " + name);
-    const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message);
-    window.location.href = "mailto:mohan.reddy02@gmail.com,support@dailycart24x7.com?subject=" + subject + "&body=" + body;
-    note.textContent = "Opening your email app to send the request.";
-    note.classList.add("ok");
-    form.reset();
+    button.disabled = true;
+    note.textContent = "Sending…";
+    note.classList.remove("ok");
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/mohan.reddy02@gmail.com", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: data
+      });
+      const result = await response.json();
+      if (response.ok) {
+        note.textContent = "Message sent to mohan.reddy02@gmail.com and support@dailycart24x7.com.";
+        note.classList.add("ok");
+        form.reset();
+      } else {
+        note.textContent = result.message || "Could not send. Email us directly.";
+      }
+    } catch (error) {
+      form.removeAttribute("data-form");
+      form.submit();
+    }
+    button.disabled = false;
   });
 }

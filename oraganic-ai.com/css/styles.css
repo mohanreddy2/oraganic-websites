@@ -124,6 +124,7 @@ input, textarea, select {
 .dark-field { background: #0b1b16; border-color: var(--line); color: #fff; }
 .form-note { min-height: 1.3em; color: var(--muted); }
 .form-note.ok { color: var(--mint); }
+.honey { position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden; }
 
 .site-footer { padding: 28px 0 40px; color: var(--muted); border-top: 1px solid var(--line); }
 .footer-inner { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
