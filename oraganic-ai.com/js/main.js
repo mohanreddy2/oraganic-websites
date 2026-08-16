@@ -20,7 +20,7 @@ if (form) {
     }
     const subject = encodeURIComponent("Oraganic AI request from " + name);
     const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message);
-    window.location.href = "mailto:hello@oraganic-ai.com?subject=" + subject + "&body=" + body;
+    window.location.href = "mailto:mohan.reddy02@gmail.com,support@dailycart24x7.com?subject=" + subject + "&body=" + body;
     note.textContent = "Opening your email app to send the request.";
     note.classList.add("ok");
     form.reset();

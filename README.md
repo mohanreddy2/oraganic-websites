@@ -35,6 +35,6 @@ At the registrar for each domain, add these **A** records for `@` (the root doma
 
 Add a **CNAME** for `www` → `mohanreddy2.github.io`
 
-Also create mailbox or forwarding for `hello@oraganic.online` and `hello@oraganic-ai.com` if you want the contact buttons to land in a real inbox (many registrars include free forwarding).
+Contact on both sites: `mohan.reddy02@gmail.com`, `support@dailycart24x7.com`, WhatsApp `+65 9062 8025` and `+91 91107 59384`.
 
 After DNS updates (often 5–30 minutes), GitHub will issue free HTTPS certificates. In each repo: Settings → Pages → check **Enforce HTTPS** when it becomes available.
