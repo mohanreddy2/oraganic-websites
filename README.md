@@ -1,13 +1,14 @@
 # Oraganic websites
 
-Two static sites, no paid tools:
+Three static sites, no paid tools:
 
 | Domain | Folder | What it is |
 | --- | --- | --- |
 | [oraganic.online](https://oraganic.online) | `oraganic.online/` | Organic food brand |
 | [oraganic-ai.com](https://oraganic-ai.com) | `oraganic-ai.com/` | AI tools for organic growers |
+| [dailycart24x7.com](https://dailycart24x7.com) | `dailycart24x7.com/` | Mango export from India |
 
-Open either `index.html` in a browser to preview locally.
+Open any `index.html` in a browser to preview locally.
 
 ## Free stack
 
@@ -20,9 +21,10 @@ Open either `index.html` in a browser to preview locally.
 
 | Site | GitHub | Pages |
 | --- | --- | --- |
-| Source (both sites) | https://github.com/mohanreddy2/oraganic-websites | — |
+| Source (all sites) | https://github.com/mohanreddy2/oraganic-websites | — |
 | oraganic.online | https://github.com/mohanreddy2/oraganic-online | https://mohanreddy2.github.io/oraganic-online/ |
 | oraganic-ai.com | https://github.com/mohanreddy2/oraganic-ai | https://mohanreddy2.github.io/oraganic-ai/ |
+| dailycart24x7.com | https://github.com/mohanreddy2/dailycart24x7 | https://mohanreddy2.github.io/dailycart24x7/ |
 
 ## Point your domains (required)
 
