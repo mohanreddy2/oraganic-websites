@@ -1,0 +1,44 @@
+name: Publish sites
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: github.repository == 'mohanreddy2/oraganic-websites'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish each site folder to its Pages repo
+        env:
+          GH_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "SITE_DEPLOY_TOKEN is not set. Skip live publish."
+            exit 0
+          fi
+          git config --global user.name "MOHAN REDDY YADAMURI"
+          git config --global user.email "mohan.reddy02@gmail.com"
+          publish_one() {
+            local src="$1"
+            local repo="$2"
+            local tmp
+            tmp="$(mktemp -d)"
+            git clone --depth 1 "https://x-access-token:${GH_TOKEN}@github.com/mohanreddy2/${repo}.git" "$tmp"
+            find "$tmp" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+            cp -a "$src"/. "$tmp"/
+            git -C "$tmp" add -A
+            if git -C "$tmp" diff --cached --quiet; then
+              echo "No changes for $repo"
+              return
+            fi
+            git -C "$tmp" commit -m "Publish $src from oraganic-websites."
+            git -C "$tmp" push origin HEAD
+            echo "Published $repo"
+          }
+          publish_one thanks2all.org thanks2all
+          publish_one dailycart24x7.com dailycart24x7
+          publish_one idailycart.com idailycart
+          publish_one oraganic.online oraganic-online
+          publish_one oraganic-ai.com oraganic-ai

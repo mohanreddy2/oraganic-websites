@@ -44,3 +44,15 @@ Add a **CNAME** for `www` → `mohanreddy2.github.io`
 Contact forms send to `mohan.reddy02@gmail.com` and CC `support@dailycart24x7.com` via free [FormSubmit](https://formsubmit.co). After the first test send, open Gmail and click the FormSubmit confirmation link (check Spam). WhatsApp: `+65 9062 8025` and `+91 91107 59384`.
 
 After DNS updates (often 5–30 minutes), GitHub will issue free HTTPS certificates. In each repo: Settings → Pages → check **Enforce HTTPS** when it becomes available.
+
+## Update content without editing HTML
+
+**Admin panel:** [thanks2all.org/admin](https://thanks2all.org/admin/) — sign in with a GitHub personal access token (Contents: Read and write on `oraganic-websites`). Edit homepage text for every site, then save. A GitHub Action publishes the live domains.
+
+**Google Sheet (daily notes / small text):**
+
+1. Create a Google Sheet and import `content/google-sheet-template.csv` (columns `key,value`) or `content/diary-sheet-template.csv` (`Date,Title,Note`).
+2. File → Share → Publish to web → CSV.
+3. In the admin, paste that CSV URL into **Google Sheet CSV URL** and save.
+
+The homepage reads `content.json` first, then overlays any keys from the Sheet. The thanks2all diary uses a Date/Title/Note sheet when that URL is set.
