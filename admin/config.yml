@@ -20,8 +20,11 @@ collections:
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
           - { label: Story, name: story, widget: text, hint: "Separate paragraphs with a blank line" }
-          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish the Sheet as CSV and paste the link" }
-          - { label: Google Form embed URL, name: formEmbed, widget: string, required: false }
+          - { label: Google Form embed URL, name: formEmbed, widget: string, required: false, hint: "Form → Send → Embed → copy the iframe src" }
+          - { label: Google Form share URL, name: formShare, widget: string, required: false, hint: "Form → Send → copy link. Leave blank to share the Forms list." }
+          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "File → Share → Publish to web → CSV" }
+          - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Sheet → Share → copy link. Leave blank to share the Sheets list." }
+          - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed, or a /pubhtml link" }
       - name: diary
         label: Diary notes
         file: thanks2all.org/data/diary.json
