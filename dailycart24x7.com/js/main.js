@@ -11,14 +11,26 @@ if (form) {
     const note = form.querySelector(".form-note");
     const button = form.querySelector("[type=submit]");
     const data = new FormData(form);
-    const name = String(data.get("name") || "").trim();
-    const email = String(data.get("email") || "").trim();
-    const message = String(data.get("message") || "").trim();
-    if (!name || !email || !message) {
-      note.textContent = "Please fill in every required field.";
+    const name = String(data.get("Buyer name") || "").trim();
+    const email = String(data.get("Buyer email") || "").trim();
+    const phone = String(data.get("Phone / WhatsApp") || "").trim();
+    const country = String(data.get("Destination country") || "").trim();
+    const need = String(data.get("Requirement") || "").trim();
+    const variety = String(data.get("Variety") || "").trim();
+    const quantity = String(data.get("Quantity") || "").trim();
+    const message = String(data.get("Other details") || "").trim();
+    if (!name || !email || !phone || !country || !need || !variety || !quantity || !message) {
+      note.textContent = "Please fill in every required field so we know who you are and what you need.";
       note.classList.remove("ok");
       return;
     }
+    const subject = "Mango export enquiry from " + name + " — " + country;
+    data.set("_replyto", email);
+    data.set("_subject", subject);
+    const replytoField = form.querySelector("#replyto");
+    const subjectField = form.querySelector("[name=_subject]");
+    if (replytoField) replytoField.value = email;
+    if (subjectField) subjectField.value = subject;
     button.disabled = true;
     note.textContent = "Sending…";
     note.classList.remove("ok");
