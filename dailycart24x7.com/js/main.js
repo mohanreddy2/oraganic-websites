@@ -29,7 +29,8 @@ if (form) {
         body: data
       });
       const result = await response.json();
-      if (response.ok) {
+      const delivered = response.ok && String(result.success) === "true";
+      if (delivered) {
         note.textContent = "Enquiry sent to mohan.reddy02@gmail.com and support@dailycart24x7.com.";
         note.classList.add("ok");
         form.reset();
