@@ -1,0 +1,252 @@
+:root {
+  --sheet-ink: #1c2419;
+  --sheet-muted: #5b6756;
+  --sheet-line: #d7ddd2;
+  --sheet-paper: #f7f4ee;
+  --sheet-green: #3d4f3a;
+  --sheet-gold: #c4a35a;
+}
+
+.sheet-bar,
+.sheet-panel,
+.sheet-board {
+  font-family: "Nunito Sans", "Segoe UI", sans-serif;
+  color: var(--sheet-ink);
+  box-sizing: border-box;
+}
+
+.sheet-bar *,
+.sheet-panel *,
+.sheet-board * {
+  box-sizing: border-box;
+}
+
+.sheet-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2147483000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--sheet-green);
+  color: #fff;
+  box-shadow: 0 -8px 24px rgba(28, 36, 25, 0.18);
+}
+
+.sheet-bar p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sheet-bar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sheet-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--sheet-green);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sheet-btn.ghost {
+  background: transparent;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+}
+
+.sheet-board .sheet-btn.ghost,
+.sheet-card .sheet-btn.ghost,
+.sheet-panel .sheet-btn.ghost,
+.sheet-empty .sheet-btn.ghost {
+  color: var(--sheet-green);
+  box-shadow: inset 0 0 0 1px var(--sheet-line);
+}
+
+.sheet-btn:hover {
+  filter: brightness(0.97);
+}
+
+.sheet-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2147483001;
+  width: min(460px, 100vw);
+  height: calc(100vh - 56px);
+  display: none;
+  flex-direction: column;
+  background: var(--sheet-paper);
+  border-left: 1px solid var(--sheet-line);
+  box-shadow: -12px 0 32px rgba(28, 36, 25, 0.12);
+}
+
+.sheet-panel.open {
+  display: flex;
+}
+
+.sheet-panel header,
+.sheet-panel footer {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--sheet-line);
+}
+
+.sheet-panel footer {
+  border-bottom: 0;
+  border-top: 1px solid var(--sheet-line);
+}
+
+.sheet-panel h2,
+.sheet-board h1,
+.sheet-board h2 {
+  margin: 0 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.sheet-panel p,
+.sheet-board .lead {
+  margin: 0;
+  color: var(--sheet-muted);
+  line-height: 1.5;
+}
+
+.sheet-panel-body {
+  flex: 1;
+  overflow: auto;
+  padding: 16px 18px 88px;
+}
+
+.sheet-list {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.sheet-card {
+  padding: 14px;
+  border: 1px solid var(--sheet-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.sheet-card.active {
+  border-color: var(--sheet-green);
+  box-shadow: 0 0 0 3px rgba(61, 79, 58, 0.12);
+}
+
+.sheet-card h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+.sheet-card p {
+  margin: 0 0 10px;
+  font-size: 13px;
+}
+
+.sheet-card .sheet-btn {
+  background: var(--sheet-green);
+  color: #fff;
+  margin: 0 6px 6px 0;
+}
+
+.sheet-card .sheet-btn.ghost {
+  background: transparent;
+  color: var(--sheet-green);
+  box-shadow: inset 0 0 0 1px var(--sheet-line);
+}
+
+.sheet-frame {
+  width: 100%;
+  min-height: 320px;
+  height: 42vh;
+  border: 1px solid var(--sheet-line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.sheet-board {
+  min-height: 100vh;
+  padding: 28px 20px 40px;
+  background: linear-gradient(180deg, #eef2ea, var(--sheet-paper) 180px);
+}
+
+.sheet-board .wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.sheet-board-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.sheet-grid {
+  display: grid;
+  gap: 18px;
+}
+
+@media (min-width: 900px) {
+  .sheet-grid {
+    grid-template-columns: 340px 1fr;
+    align-items: start;
+  }
+
+  .sheet-frame {
+    min-height: 70vh;
+    height: 70vh;
+  }
+}
+
+.sheet-empty {
+  padding: 28px;
+  border: 1px dashed var(--sheet-line);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.sheet-empty h2 {
+  margin-top: 0;
+}
+
+.sheet-empty .sheet-bar-actions {
+  margin: 16px 0 0;
+}
+
+.sheet-empty .sheet-btn {
+  background: var(--sheet-green);
+  color: #fff;
+}
+
+.sheet-empty .sheet-btn.ghost {
+  background: transparent;
+  color: var(--sheet-green);
+  box-shadow: inset 0 0 0 1px var(--sheet-line);
+}
+
+body.has-sheet-bar {
+  padding-bottom: 64px;
+}

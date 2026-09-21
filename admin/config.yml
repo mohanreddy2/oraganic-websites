@@ -17,14 +17,14 @@ collections:
         label: Home and Google Sheet
         file: thanks2all.org/content.json
         fields:
+          - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Open your sheet → Share → copy link. Use this whenever you update the site." }
+          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "File → Share → Publish to web → CSV. The diary page reads notes from this." }
+          - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed, or a /pubhtml link so you can see the sheet here." }
+          - { label: Google Form share URL, name: formShare, widget: string, required: false, hint: "Form → Send → copy link. Leave blank to open your Forms list." }
+          - { label: Google Form embed URL, name: formEmbed, widget: string, required: false, hint: "Form → Send → Embed → copy the iframe src" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
           - { label: Story, name: story, widget: text, hint: "Separate paragraphs with a blank line" }
-          - { label: Google Form embed URL, name: formEmbed, widget: string, required: false, hint: "Form → Send → Embed → copy the iframe src" }
-          - { label: Google Form share URL, name: formShare, widget: string, required: false, hint: "Form → Send → copy link. Leave blank to share the Forms list." }
-          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "File → Share → Publish to web → CSV" }
-          - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Sheet → Share → copy link. Leave blank to share the Sheets list." }
-          - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed, or a /pubhtml link" }
       - name: diary
         label: Diary notes
         file: thanks2all.org/data/diary.json
@@ -44,9 +44,11 @@ collections:
         label: Home and social feeds
         file: dailycart24x7.com/content.json
         fields:
+          - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Share → copy link. Use this sheet when you update this site." }
+          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish to web → CSV" }
+          - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
-          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false }
           - { label: Support email, name: support_email, widget: string }
           - { label: YouTube, name: youtube, widget: string }
           - { label: Facebook, name: facebook, widget: string }
@@ -60,9 +62,11 @@ collections:
         label: Home
         file: idailycart.com/content.json
         fields:
+          - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Share → copy link. Use this sheet when you update this site." }
+          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish to web → CSV" }
+          - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
-          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false }
           - { label: Support email, name: support_email, widget: string }
           - { label: YouTube, name: youtube, widget: string }
           - { label: Facebook, name: facebook, widget: string }
@@ -76,9 +80,11 @@ collections:
         label: Home
         file: oraganic.online/content.json
         fields:
+          - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Share → copy link. Use this sheet when you update this site." }
+          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish to web → CSV" }
+          - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
-          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false }
           - { label: Support email, name: support_email, widget: string }
           - { label: YouTube, name: youtube, widget: string }
           - { label: Facebook, name: facebook, widget: string }
@@ -92,9 +98,11 @@ collections:
         label: Home
         file: oraganic-ai.com/content.json
         fields:
+          - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Share → copy link. Use this sheet when you update this site." }
+          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish to web → CSV" }
+          - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
-          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false }
           - { label: Support email, name: support_email, widget: string }
           - { label: YouTube, name: youtube, widget: string }
           - { label: Facebook, name: facebook, widget: string }
@@ -108,9 +116,11 @@ collections:
         label: Home
         file: alfa-garden.com/content.json
         fields:
+          - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Share → copy link. Use this sheet when you update this site." }
+          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish to web → CSV" }
+          - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
-          - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false }
           - { label: Support email, name: support_email, widget: string }
           - { label: YouTube, name: youtube, widget: string }
           - { label: Facebook, name: facebook, widget: string }
