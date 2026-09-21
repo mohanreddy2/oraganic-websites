@@ -119,6 +119,7 @@ h1, h2, h3, .logo-word { font-family: "Fraunces", serif; }
 .card, .quote { padding: 28px; }
 .product img { height: 210px; width: 100%; object-fit: cover; border-radius: 22px 22px 0 0; }
 .product-body { padding: 20px 22px 24px; }
+.product-body .btn { margin-top: 14px; display: inline-block; }
 .price { color: var(--leaf); font-weight: 800; }
 
 .banner {

@@ -47,7 +47,7 @@ Contact forms send to `mohan.reddy02@gmail.com` and CC `support@dailycart24x7.co
 
 After DNS updates (often 5–30 minutes), GitHub will issue free HTTPS certificates. In each repo: Settings → Pages → check **Enforce HTTPS** when it becomes available.
 
-**alfa-garden.com today:** the domain is registered on Squarespace (old Google Domains nameservers). Live DNS still points `@` and `www` to Webador (`35.204.150.5`). Leave those A records if you keep editing in Webador. To switch this folder live, replace those A records with the GitHub Pages IPs above and add `www` → `mohanreddy2.github.io`.
+**alfa-garden.com:** GitHub Pages custom domain with HTTPS is on. Keep the domain in Squarespace. After the new shop stays live, cancel Webador.
 
 ## Update content without editing HTML
 

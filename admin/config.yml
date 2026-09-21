@@ -20,6 +20,16 @@ collections:
           - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Your private Mohan — all logins sheet. Restricted to you. Do not Publish to web." }
           - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Leave blank. Do not publish a credentials sheet." }
 
+  - name: enquiries
+    label: Enquiry log
+    files:
+      - name: sheet
+        label: Leads Google Sheet
+        file: content/enquiries.json
+        fields:
+          - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Private sheet of FormSubmit / WhatsApp leads. Restricted to you." }
+          - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Leave blank. Do not publish leads." }
+
   - name: thanks2all
     label: thanks2all.org
     files:
@@ -57,6 +67,7 @@ collections:
           - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Share → copy link. Use this sheet when you update this site." }
           - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish to web → CSV" }
           - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed" }
+          - { label: Produce / price CSV, name: produceCsv, widget: string, required: false, hint: "produce.csv on this site, or a published Google Sheet CSV (name, price, whatsapp)" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
           - { label: Support email, name: support_email, widget: string }
@@ -75,6 +86,7 @@ collections:
           - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Share → copy link. Use this sheet when you update this site." }
           - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish to web → CSV" }
           - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed" }
+          - { label: Produce / price CSV, name: produceCsv, widget: string, required: false, hint: "produce.csv on this site, or a published Google Sheet CSV (name, price, whatsapp)" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
           - { label: Support email, name: support_email, widget: string }
@@ -93,6 +105,7 @@ collections:
           - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Share → copy link. Use this sheet when you update this site." }
           - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish to web → CSV" }
           - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed" }
+          - { label: Produce / price CSV, name: produceCsv, widget: string, required: false, hint: "produce.csv on this site, or a published Google Sheet CSV (name, price, whatsapp)" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
           - { label: Support email, name: support_email, widget: string }
@@ -111,6 +124,7 @@ collections:
           - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Share → copy link. Use this sheet when you update this site." }
           - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish to web → CSV" }
           - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed" }
+          - { label: Produce / price CSV, name: produceCsv, widget: string, required: false, hint: "produce.csv on this site, or a published Google Sheet CSV (name, price, whatsapp)" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
           - { label: Support email, name: support_email, widget: string }
@@ -129,6 +143,7 @@ collections:
           - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Share → copy link. Use this sheet when you update this site." }
           - { label: Google Sheet CSV URL, name: sheetCsv, widget: string, required: false, hint: "Publish to web → CSV" }
           - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Publish to web → Embed" }
+          - { label: Produce / price CSV, name: produceCsv, widget: string, required: false, hint: "produce.csv on this site, or a published Google Sheet CSV (name, price, whatsapp)" }
           - { label: Hero title, name: hero_title, widget: string }
           - { label: Hero lead, name: hero_lead, widget: text }
           - { label: Support email, name: support_email, widget: string }

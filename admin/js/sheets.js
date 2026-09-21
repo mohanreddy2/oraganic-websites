@@ -15,6 +15,15 @@
       note: "One private Google Sheet: every password, token, and admin URL. Do not publish it."
     },
     {
+      id: "enquiries",
+      name: "Enquiry log",
+      cms: "./index.html#/collections/enquiries",
+      live: "./keys.html",
+      content: RAW + "content/enquiries.json",
+      defaultSheet: "./keys.html",
+      note: "One row per mango or shop lead from Gmail and WhatsApp. Keep private."
+    },
+    {
       id: "thanks2all",
       name: "thanks2all.org",
       cms: "./index.html#/collections/thanks2all",
@@ -61,7 +70,7 @@
       cms: "./index.html#/collections/alfa_garden",
       live: "https://alfa-garden.com/",
       content: RAW + "alfa-garden.com/content.json",
-      note: "KR Puram shop homepage."
+      note: "KR Puram shop homepage. Produce prices are in produce.csv — WhatsApp from each item. Order groceries on dailycartindia.com."
     }
   ];
 

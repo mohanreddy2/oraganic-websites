@@ -1,10 +1,12 @@
 {
   "hero_title": "Organic produce from Alfa Garden, KR Puram.",
   "hero_lead": "Daily Cart 24/7 Private Limited packs seasonal fruit and vegetables for homes around Kodigehalli, Hoodi, and KR Puram. Same company as dailycart24x7.com — local retail here, export from India on the sister sites.",
-  "sheetCsv": "",
+  "sheetCsv": "home.csv",
   "sheetShare": "",
   "sheetEmbed": "",
+  "produceCsv": "produce.csv",
   "support_email": "support@dailycart24x7.com",
+  "whatsapp_phone": "919110759384",
   "youtube": "https://www.youtube.com/@dailycart24x76",
   "facebook": "https://www.facebook.com/dailycart.groceries.3/",
   "instagram": "https://www.instagram.com/dailycart247x365/",

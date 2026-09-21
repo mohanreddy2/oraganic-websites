@@ -29,7 +29,7 @@ if (form) {
         body: data
       });
       const result = await response.json();
-      if (response.ok) {
+      if (response.ok && String(result.success) === "true") {
         note.textContent = "Message sent to mohan.reddy02@gmail.com and support@dailycart24x7.com.";
         note.classList.add("ok");
         form.reset();

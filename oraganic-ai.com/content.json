@@ -1,10 +1,12 @@
 {
   "hero_title": "AI that understands the soil.",
   "hero_lead": "Field notes, planting windows, and organic-input checks in one quiet dashboard. Built for growers who already farm clean — and want fewer guesswork hours.",
-  "sheetCsv": "",
+  "sheetCsv": "home.csv",
   "sheetShare": "",
   "sheetEmbed": "",
+  "produceCsv": "",
   "support_email": "support@dailycart24x7.com",
+  "whatsapp_phone": "6590628025",
   "youtube": "https://www.youtube.com/@dailycart24x76",
   "facebook": "https://www.facebook.com/dailycart.groceries.3/",
   "instagram": "https://www.instagram.com/dailycart247x365/",
