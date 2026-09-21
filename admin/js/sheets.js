@@ -6,6 +6,15 @@
 
   const SITES = [
     {
+      id: "logins",
+      name: "My logins",
+      cms: "./index.html#/collections/logins",
+      live: "./keys.html",
+      content: RAW + "content/credentials.json",
+      defaultSheet: "./keys.html",
+      note: "One private Google Sheet: every password, token, and admin URL. Do not publish it."
+    },
+    {
       id: "thanks2all",
       name: "thanks2all.org",
       cms: "./index.html#/collections/thanks2all",
@@ -149,17 +158,19 @@
   function sheetViewer(site, config) {
     const share = sheetShareUrl(site, config);
     const embed = sheetEmbedUrl(config);
-    const connected = share !== SHEETS_HOME;
+    const connected = /docs\.google\.com\/spreadsheets\/d\//i.test(share);
     const box = el("div", { class: embed ? "" : "sheet-empty" });
     box.appendChild(el("h2", { text: site.name }));
     box.appendChild(el("p", {
       class: "lead",
-      text: connected
+      text: site.id === "logins" && !connected
+        ? "Download the CSV, import it into a private Google Sheet, fill your passwords, then paste the share link in My logins."
+        : connected
         ? "Your Google Sheet is ready. Open it, update the rows, then come back and save the website."
         : "No sheet link yet. Open Google Sheets, copy Share, paste it in this site’s admin, and save."
     }));
     const actions = el("div", { class: "sheet-bar-actions" }, [
-      button(connected ? "Open and use this sheet" : "Open Google Sheets", share),
+      button(site.id === "logins" && !connected ? "Set up my logins sheet" : (connected ? "Open and use this sheet" : "Open Google Sheets"), share),
       button("Edit " + site.name, site.cms, "ghost"),
       button("Open live site", site.live, "ghost")
     ]);
@@ -182,6 +193,7 @@
     if (!actions) return;
     actions.innerHTML = "";
     actions.appendChild(button("Use my sheet", share));
+    actions.appendChild(button("My logins", "./keys.html", "ghost"));
     actions.appendChild(button("My Forms", formShareUrl(config), "ghost"));
     actions.appendChild(button("See all sheets", "./sheets.html?site=" + site.id, "ghost"));
     actions.appendChild(button("Edit " + site.name, site.cms, "ghost"));
@@ -201,7 +213,7 @@
     if (!bar) {
       document.body.classList.add("has-sheet-bar");
       bar = el("div", { id: "sheet-bar", class: "sheet-bar" }, [
-        el("p", { text: "When you update a site, use your Google Sheet." }),
+        el("p", { text: "When you update a site, use your Google Sheet. My logins holds every password." }),
         el("div", { class: "sheet-bar-actions" })
       ]);
       document.body.appendChild(bar);
@@ -253,7 +265,7 @@
 
   function selectedSiteId() {
     const params = new URLSearchParams(window.location.search);
-    return params.get("site") || "thanks2all";
+    return params.get("site") || "logins";
   }
 
   async function mountBoard() {

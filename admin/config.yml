@@ -10,6 +10,16 @@ public_folder: /media
 locale: en
 
 collections:
+  - name: logins
+    label: My logins
+    files:
+      - name: sheet
+        label: Private credentials Google Sheet
+        file: content/credentials.json
+        fields:
+          - { label: Google Sheet share URL, name: sheetShare, widget: string, required: false, hint: "Your private Mohan — all logins sheet. Restricted to you. Do not Publish to web." }
+          - { label: Google Sheet embed URL, name: sheetEmbed, widget: string, required: false, hint: "Leave blank. Do not publish a credentials sheet." }
+
   - name: thanks2all
     label: thanks2all.org
     files:
