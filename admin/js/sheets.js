@@ -11,7 +11,7 @@
       cms: "./index.html#/collections/logins",
       live: "./keys.html",
       content: RAW + "content/credentials.json",
-      defaultSheet: "./keys.html",
+      defaultSheet: "https://docs.google.com/spreadsheets/d/15IC7QKFiopTQdXByLns9qz5v62nL3FkxKrINJXEGZVI/edit",
       note: "One private Google Sheet: every password, token, and admin URL. Do not publish it."
     },
     {
