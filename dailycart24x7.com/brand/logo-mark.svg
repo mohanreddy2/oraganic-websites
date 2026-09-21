@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 260" role="img" aria-label="DailyCart mark">
+  <title>Daily Cart 24x7</title>
+  <defs>
+    <linearGradient id="yellow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF56B"/>
+      <stop offset="100%" stop-color="#FFD400"/>
+    </linearGradient>
+  </defs>
+  <path d="M28 96 L110 22 L192 96" fill="none" stroke="#1B2A4A" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M192 96 C210 76 200 48 174 42" fill="none" stroke="#1B2A4A" stroke-width="12" stroke-linecap="round"/>
+  <path d="M186 28 C176 18 156 22 152 36 C162 42 178 40 186 28Z" fill="#7FBA00"/>
+  <rect x="40" y="104" width="60" height="60" rx="14" fill="#F25022"/>
+  <rect x="112" y="104" width="60" height="60" rx="14" fill="#7FBA00"/>
+  <rect x="40" y="176" width="60" height="60" rx="14" fill="#00A4EF"/>
+  <rect x="112" y="176" width="60" height="60" rx="14" fill="url(#yellow)"/>
+  <circle cx="70" cy="248" r="9" fill="#1B2A4A"/>
+  <circle cx="142" cy="248" r="9" fill="#1B2A4A"/>
+</svg>

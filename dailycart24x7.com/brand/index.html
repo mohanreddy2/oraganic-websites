@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Cart 24x7 — Logo concepts</title>
+  <link rel="icon" href="logo-mark.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --navy: #1B2A4A;
+      --red: #F25022;
+      --green: #7FBA00;
+      --blue: #00A4EF;
+      --gold: #FFD400;
+      --paper: #f6f7fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--paper);
+      color: var(--navy);
+    }
+    header {
+      padding: 36px 24px 12px;
+      text-align: center;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.8rem; }
+    .lead { margin: 0 auto 10px; max-width: 720px; color: #5A6B82; }
+    .colors { display: flex; justify-content: center; gap: 10px; margin: 18px 0 8px; flex-wrap: wrap; }
+    .swatch {
+      width: 72px; height: 72px; border-radius: 16px; color: #fff;
+      display: grid; place-items: center; font-weight: 800; font-size: 1.2rem;
+    }
+    .meaning { font-size: 0.78rem; color: #5A6B82; margin-top: 4px; text-align: center; }
+    .grid { width: min(1080px, calc(100% - 32px)); margin: 0 auto 48px; display: grid; gap: 22px; }
+    .card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 16px 40px rgba(27, 42, 74, 0.06);
+    }
+    .card h2 { margin: 0 0 6px; font-size: 1.15rem; }
+    .card p { margin: 0 0 18px; color: #5A6B82; }
+    .stage { background: #fff; border: 1px dashed #d5dbe6; border-radius: 16px; padding: 24px; display: grid; place-items: center; }
+    .stage.dark { background: #1B2A4A; }
+    .stage img, .stage object { max-width: 100%; height: auto; }
+    .hero { max-height: 220px; }
+    .emblem { max-height: 280px; }
+    .mark { max-height: 200px; }
+    .header-logo { max-height: 72px; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 720px) { .pair { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Daily Cart 24x7 Pvt Limited</h1>
+    <p class="lead">Company motto built into the mark: <strong>W</strong>ealth, <strong>H</strong>ealth, <strong>T</strong>ime — always on, 24/7.</p>
+    <div class="colors">
+      <div>
+        <div class="swatch" style="background:#FFD400;color:#1B2A4A">W</div>
+        <div class="meaning">Wealth · yellow</div>
+      </div>
+      <div>
+        <div class="swatch" style="background:#7FBA00">H</div>
+        <div class="meaning">Health · green</div>
+      </div>
+      <div>
+        <div class="swatch" style="background:#00A4EF">T</div>
+        <div class="meaning">Time · blue</div>
+      </div>
+      <div>
+        <div class="swatch" style="background:#F25022">7</div>
+        <div class="meaning">24/7 energy · red</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="grid">
+    <article class="card">
+      <h2>Recommended — hero lockup</h2>
+      <p>House + cart + Microsoft four-square basket, DAILYCART 24/7, and WHT spelled out as Wealth · Health · Time.</p>
+      <div class="stage"><img class="hero" src="dailycart-logo-hero.png" alt="DailyCart hero logo"></div>
+    </article>
+
+    <article class="card">
+      <h2>Production SVG — website header</h2>
+      <p>Sharp at any size. Use this on the live site once you pick a direction.</p>
+      <div class="pair">
+        <div class="stage"><img class="header-logo" src="logo-header.svg" alt="Header logo on light"></div>
+        <div class="stage dark"><img class="header-logo" src="logo-header.svg" alt="Header logo on dark"></div>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>Emblem from your notebook sketch</h2>
+      <p>Circle with 24 over 7, cart/house wrap, and WHT tiles underneath.</p>
+      <div class="pair">
+        <div class="stage"><img class="emblem" src="logo-emblem.svg" alt="WHT emblem SVG"></div>
+        <div class="stage"><img class="emblem" src="dailycart-logo-emblem.png" alt="WHT emblem painted concept"></div>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>Icon only</h2>
+      <p>App icon, favicon, and social avatar. Four Microsoft tiles form the cart.</p>
+      <div class="pair">
+        <div class="stage"><img class="mark" src="logo-mark.svg" alt="DailyCart mark"></div>
+        <div class="stage"><img class="hero" src="dailycart-logo-wordmark.png" alt="Wordmark concept keeping the original cart"></div>
+      </div>
+    </article>
+  </div>
+</body>
+</html>

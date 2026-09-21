@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" role="img" aria-label="DailyCart 24/7 WHT emblem">
+  <title>24/7 Wealth Health Time</title>
+  <defs>
+    <linearGradient id="yellow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF56B"/>
+      <stop offset="100%" stop-color="#FFD400"/>
+    </linearGradient>
+  </defs>
+  <path d="M52 48 V168 C52 248 118 292 180 292 C248 292 308 246 308 168 V118" fill="none" stroke="#1B2A4A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M28 168 H332" fill="none" stroke="#1B2A4A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M308 118 C322 96 314 68 290 60" fill="none" stroke="#1B2A4A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M304 40 C292 28 270 32 266 48 C278 54 296 52 304 40Z" fill="#7FBA00"/>
+  <circle cx="180" cy="168" r="92" fill="#ffffff" stroke="#1B2A4A" stroke-width="6"/>
+  <text x="180" y="150" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="54" font-weight="800" fill="#00A4EF">24</text>
+  <rect x="132" y="164" width="96" height="8" rx="4" fill="url(#yellow)"/>
+  <text x="180" y="226" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="54" font-weight="800" fill="#F25022">7</text>
+  <rect x="78" y="318" width="56" height="56" rx="14" fill="url(#yellow)"/>
+  <text x="106" y="356" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#1B2A4A">W</text>
+  <rect x="152" y="318" width="56" height="56" rx="14" fill="#7FBA00"/>
+  <text x="180" y="356" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#ffffff">H</text>
+  <rect x="226" y="318" width="56" height="56" rx="14" fill="#00A4EF"/>
+  <text x="254" y="356" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#ffffff">T</text>
+  <text x="180" y="404" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4" fill="#1B2A4A">WEALTH - HEALTH - TIME</text>
+</svg>
